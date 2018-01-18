@@ -39,6 +39,9 @@ export class AppComponent {
     } 
   }
 }
+GoTo(posx,posy){
+  window.scrollTo({ left: posx, top: posy, behavior: 'smooth' });
+}
 ToggleMenu(evt){
   console.log('called');
   if(document.getElementById('ham-menu').classList.contains('hide-header')){
