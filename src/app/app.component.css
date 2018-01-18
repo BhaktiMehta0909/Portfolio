@@ -1,0 +1,133 @@
+
+.cover-container{
+    height: 500px;
+    position: absolute;
+}
+.cover-photo{
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+
+}
+.cover-name{
+    position: relative;
+    font-family: Lovely_Home;
+    top: 80px;
+    text-align: center;
+    font-size: 5em;
+}
+.cover-desc{
+    position: relative;
+    top: 90px;
+    text-align: center;
+}
+.cover-link{
+    position: relative;
+    top: 95px;
+    text-align: center;
+}
+.cover-link a{
+    color: #A43E25;
+    cursor: pointer;
+}
+.photo{
+    width: 300px;
+    height: 300px;
+    border: 5px solid #A43E25;
+    border-radius: 50%;
+    position: relative;
+    top: 115px;
+    left: 40%;
+}
+.rounded-circle{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+   
+}
+.ham-icon{
+    position: relative;
+    width: 65px;
+    height: 40px;
+    left: 1%;
+    cursor: pointer;
+}
+.my-sections{
+    margin: 7%;
+    min-height: 100px;
+    animation-name: content;
+    animation-duration: 4s;
+}
+.ham-menu{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    top: -500px;
+    background: white;
+    opacity: 0.7;
+}
+.ham-content{
+    position: relative;
+    top: 20%;
+    text-align: center;
+}
+.ham-content a{
+    display: block;
+    color: #A43E25;
+    font-family: Lovely_Home;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.ham-content a :hover{
+    text-decoration: none;
+}
+.my-sections h3{
+    color: #A43E25;
+    font-family: Lovely_Home;
+}
+.hide-header{
+    display: none;
+}
+.show-header{
+    display: block;
+}
+.display-block{
+    display: block;
+}
+@keyframes content{
+    from {left: 10px;}
+    to {left: 50px;}
+
+}
+@media only screen and (max-width: 768px) {
+
+.photo{
+    width: 150px;
+    height: 150px;
+    top: 108px;
+    left: 33%;
+}
+.cover-name{
+    font-size: 2em;
+}
+.cover-desc{
+    font-size: 1em;
+}
+.cover-container{
+    height: 340px;
+}
+.my-sections :first-child{
+    margin-top: 35%;
+}
+.ham-menu{
+    top: -340px;
+    z-index: 10;
+    opacity: 0.9;
+    height: 700px;
+    width: 100%;
+}
+.ham-icon{
+    z-index: 20;
+}
+}

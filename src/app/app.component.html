@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="cover-container col-xs-12">
+  <img width="300" alt="Angular Logo" src="../assets/Images/back-cover.jpg" class=" cover-photo">
+  <!-- <h2 class="cover-name">{{Name}}</h2> -->
+  <div class="ham-menu hide-header" id="ham-menu"> 
+      <div class="ham-content">
+        <a>About Me</a>
+        <a>Education</a>
+        <a>Skills</a>
+        <a>Experience</a>
+        <a>Academic Projects</a>
+      </div>
+      </div>
+</div>
+<a (click)="ToggleMenu()"><img class="ham-icon" [src]="HamIcon"></a>
+<h1 class="cover-name">{{Name}}</h1>
+<h2 class="cover-desc">{{Description}}</h2>
+<div class="photo">
+    <img [src]="MyPhoto" alt="" class="rounded-circle">
+</div>
+<section *ngFor ="let data of MyData;let i=index" class="my-sections">
+  <h3 class="hide-header" id="{{'section-'+ i}}">{{data.Heading}}</h3>
+  <p [innerHTML] = "data.Content" class="hide-header content-class" id="{{'section-p-'+ i}}"></p>
+</section>

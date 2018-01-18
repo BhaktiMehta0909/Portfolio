@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face{
+    font-family: akadora;
+    src: url("assets/Fonts/akadora.ttf");
+}
+@font-face{
+    font-family: Lovely_Home;
+    src: url("assets/Fonts/Lovely_Home.ttf");
+}
